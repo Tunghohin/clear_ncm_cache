@@ -13,7 +13,7 @@ chmod +x "$clear_script"
 
 temp_cron_file=$(mktemp)
 
-#run the script at 3:00 a.m. every day
+#run the script at 3:00 a.m. every day automatically
 cron_expression="0 3 * * * $clear_script"
 
 crontab -l > "$temp_cron_file"
